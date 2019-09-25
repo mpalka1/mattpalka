@@ -38,7 +38,7 @@ header, div, section, nav, footer{
 /* Content */
 .body-main{
     margin: 0;
-    background-image: url(./../../../Desktop/battle-board-game-chess-700971.jpg);
+    background-image: url(../img/battle-board-game-chess-700971.jpg);
     /* background-color: #fea49f; */
     flex-direction: column;
     position: relative;
