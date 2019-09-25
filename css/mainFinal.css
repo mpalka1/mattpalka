@@ -1,0 +1,141 @@
+header, div, section, nav, footer{
+    color: #ffffff;
+}
+/* Navigation */
+.a-color{
+    color: #000000;
+    text-decoration: none;
+}
+.a-color:hover{
+    color: coral;
+    text-decoration: none;
+}
+.arrow-image{
+    height: 100px;
+    width: 100px;
+}
+.dropbtn{
+    background-color: transparent;
+    border: transparent;
+}
+.header{
+    display: flex; 
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1.1rem 0;
+    z-index: auto;
+}
+#triangle{
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 100px 0 100px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+/* Content */
+.body-main{
+    margin: 0;
+    background-image: url(./../../../Desktop/battle-board-game-chess-700971.jpg);
+    /* background-color: #fea49f; */
+    flex-direction: column;
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+.body{
+    margin: 0;
+    background-color: #e27d60; 
+    flex-direction: column;
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+.p{
+    align-content: center;
+}
+.portfolio-grid {
+    align-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio-grid-image {
+    height: 200px;
+    width: 200px;
+    padding: 1rem;
+}
+
+.section-content{
+    margin:100px;
+    max-width: 800px;
+}
+.section-link{
+    color: #ffffff;
+    text-decoration: none;
+    justify-content: center;
+}
+.section-link:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.section-main{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: stretch;
+}
+/* Footer */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+  .footer,
+  .push {
+    height: 50px;
+  }
+.footer{
+    height: 50px;
+    margin-top: -50px;
+    bottom: 0;
+    height: 10%;
+    text-align: center;
+    width: 100%;
+}
+.footerText {
+    font-size: x-small;
+    text-align: center;
+    padding: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .body-main{
+        margin: 0;
+        background-image: url(./../../../Desktop/battle-board-game-chess-700971.jpg);
+        /* background-color: #fea49f; */
+        flex-direction: column;
+        position: relative;
+        background-repeat:no-repeat;
+        background-size:100% 100vh;
+    }
+    .body{
+        margin: 0;
+        background-color: #e27d60; 
+        flex-direction: column;
+        position: relative;
+        background-repeat:no-repeat;
+        background-size:100% 100vh;
+    }
+    .footer {
+      padding: 20px;
+    }
