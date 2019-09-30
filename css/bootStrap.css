@@ -1,0 +1,40 @@
+header, div, section, nav, footer{
+    color: #ffffff;
+}
+
+.arrow-image{
+    height: 100px;
+    width: 100px;
+}
+#triangle{
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 100px 0 100px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .body-main{
+        margin: 0;
+        background-image: url(./../../../Desktop/battle-board-game-chess-700971.jpg);
+        /* background-color: #fea49f; */
+        flex-direction: column;
+        position: relative;
+        background-repeat:no-repeat;
+        background-size:100% 100vh;
+    }
+    .body{
+        margin: 0;
+        background-color: #e27d60; 
+        flex-direction: column;
+        position: relative;
+        background-repeat:no-repeat;
+        background-size:100% 100vh;
+    }
+    .footer {
+      padding: 20px;
+    }
+}
