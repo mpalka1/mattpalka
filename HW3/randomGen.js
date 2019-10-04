@@ -3,13 +3,12 @@ var data = {letter:['a', 'b', 'c', 'd', 'e', 'f','g','h','i','j','k','l','m','n'
 letterUP:['A', 'B', 'C', 'D', 'E', 'F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
 symbols:['!', '@', '#', '$'],
 numbers:['0','1','2','3','4','5','6','7','8','9']};
-var pwLen = prompt('What is you pw length?');
-var pwSpecial = confirm('Do you want special Characters?');
-var pwNumbers= confirm('Do you want special Numbers?');
-var pwUpper = confirm('Do you want UpperCase?');
+var outPut = '';
 
-
-function createArray(q1,q2,q3){
+function createArray(){
+    var q1 = confirm('Do you want special Characters?');
+    var q2= confirm('Do you want special Numbers?');
+    var q3 = confirm('Do you want UpperCase?');
     var newArray = [];
     var arrayPopulation = newArray.concat(data.letter);
 
@@ -25,8 +24,9 @@ function createArray(q1,q2,q3){
     return arrayPopulation;
 }
 
-function createPass(array,len) {
-    console.log(array);
+
+function createPass(array) {
+    var len = prompt('What is you pw length?');
     var arrayPass = [];
     // While there remain elements to shuffle...
 for(var i =0; i < len ; i++){
@@ -37,11 +37,25 @@ for(var i =0; i < len ; i++){
       arrayPass.push(randVal);
       length-=1;
     }
-    console.log(arrayPass);
+    // alert(arrayPass.join(""));
+    var outPut = arrayPass.join("");
+    return outPut;
   }
   
-    /* randomize array */
-    createPass(createArray(pwSpecial,pwNumbers,pwUpper),pwLen);
+  function copyPass() {
+    /* Get the text field */
+    var copyText = document.querySelector(#passWd);
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  }
 
 
 /* first event */
