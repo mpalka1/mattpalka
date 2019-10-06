@@ -4,10 +4,12 @@ letterUP:['A', 'B', 'C', 'D', 'E', 'F','G','H','I','J','K','L','M','N','O','P','
 symbols:['!', '@', '#', '$'],
 numbers:['0','1','2','3','4','5','6','7','8','9']};
 var outPut = '';
+var passValue = document.getElementById("#pass");
+
 
 function createArray(){
     var q1 = confirm('Do you want special Characters?');
-    var q2= confirm('Do you want special Numbers?');
+    var q2= confirm('Do you want Numbers?');
     var q3 = confirm('Do you want UpperCase?');
     var newArray = [];
     var arrayPopulation = newArray.concat(data.letter);
@@ -29,7 +31,7 @@ function createPass(array) {
     var len = prompt('What is you pw length?');
     var arrayPass = [];
     // While there remain elements to shuffle...
-for(var i =0; i < len ; i++){
+    for(var i =0; i < len ; i++){
     // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * (array.length-1));
 
@@ -39,23 +41,23 @@ for(var i =0; i < len ; i++){
     }
     // alert(arrayPass.join(""));
     var outPut = arrayPass.join("");
-    return outPut;
+    alert(outPut);
   }
   
-  function copyPass() {
-    /* Get the text field */
-    var copyText = document.querySelector(#passWd);
+    // function copyPass() {
+//     /* Get the text field */
+     var copyText = document.querySelector(#passWd);
   
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+//     /* Select the text field */
+//     copyText.select();
+//     copyText.setSelectionRange(0, 99999); /*For mobile devices*/
   
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
+//     /* Copy the text inside the text field */
+//     document.execCommand("copy");
   
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
-  }
+//     /* Alert the copied text */
+//     alert("Copied the text: " + copyText.value);
+//   }
 
 
 /* first event */
