@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Car Adventures!</title>
   </head>
@@ -11,17 +12,13 @@
         <h1>Random Number Generator</h1>
         <div class="container">
             <div class="row">
-                <p class="pass">Resize this responsive page to see the effect!</p> 
+                <p id="pass">Unique Password Will Appear Here!</p> 
             </div>
             <div class="row">
-                <div class="col">
-                    <button type="button" class="btn btn-primary" onclick="createPass(createArray())" value="Create Pass" id="passWd">Generate Password</button>
+                <div class="col-sm">
+                    <button type="button" class="btn btn-primary" onclick="createPass(createArray())" value="Create Pass">Generate Password</button>
+                    <button type="button" class="btn btn-primary" onclick="textToClipboard()" >Copy Password</button>
                 </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary">Copy Password</button>
-                </div>
-        <!-- <input type="button" onclick="createPass(createArray())" value="Create Pass" id="passWd"/>
-        <input type="button" onclick="copyPass()" value="Copy the Password" id="passWd"/> -->
     </div>
     <script src="./randomGen.js"></script>
   </body>
