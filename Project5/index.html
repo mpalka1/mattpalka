@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="./style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </head>
 <body>
-    <div hour=1></div>;
-    <div hour=2></div>
-    <div hour=3></div>
-    <div hour=4></div>
-    <div hour=5></div>
-    <div hour=6></div>
-    <div hour=7></div>
-    <div hour=8></div>
-    <div hour=9></div>
-    <div hour=10></div>
-    <div hour=11></div>
-    <div hour=12></div>
-
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white">
+            <div><div>Date/Time:<div id="dateTime"></div></div></div>
+        </div>
+    </nav>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h9">9 am</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-9">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2"id = "h10">10 am</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-10">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h11">11 am</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-11">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h12">12 pm</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-12">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h13">1 pm</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-13">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h14">2 pm</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-14">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h15">3 pm</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-15">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h16">4 pm</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-16">save</button></div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn btn-light col-2" id = "h17">5 pm</div>
+        <div class="col-3"><textarea id="hour-9"></textarea></div>
+        <div class="col-2"><button class="js-save" data-key="hour-17">save</button></div>
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
